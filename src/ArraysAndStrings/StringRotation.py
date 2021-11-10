@@ -1,5 +1,7 @@
 def is_rotated(a,b):
-    
+    if  b in a:
+        return False
+
     if a == "" and b == "":
         return True
 
@@ -18,8 +20,8 @@ def is_rotated(a,b):
     return True
 
 if __name__ == "__main__":
-    print(is_rotated("aabcccccaaa",""))
-    print(is_rotated("result",""))
+    # print(is_rotated("aabcccccaaa",""))
+    # print(is_rotated("result",""))
     print(is_rotated("r","lol")) 
     print(is_rotated("erbottlewat","waterbottle"))
     print(is_rotated("terbottlewa","waterbottle"))  
